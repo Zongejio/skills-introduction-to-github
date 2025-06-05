@@ -54,7 +54,8 @@ jobs:
 
       # START: Check practical exercise
 
-      # Nothing to verify. Creating the PROFILE.md file is enough.
+      - name: Verify PROFILE.md exists
+        run: test -f PROFILE.md
 
       # END: Check practical exercise
 
